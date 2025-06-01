@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockpaperscissor</title>
+</head>
+<body style="background-color: rgb(153, 231, 205);">
+    <h1>Rock Paper Scissor Game</h1>
+   
+   <button onclick="
+    playGame('rock');
+    const emojiMap1 = { rock: '🪨', paper: '📄', scissors: '✂️' };
+    ">🪨 rock</button>
+
+    <button onclick="
+    playGame('paper');
+    const emojiMap1 = { rock: '🪨', paper: '📄', scissors: '✂️' };
+    ">📄 paper</button>
+
+
+    <button onclick="
+     playGame('scissor');
+    const emojiMap1 = { rock: '🪨', paper: '📄', scissors: '✂️' };
+    ">✂️scissor</button>
+
+    <script>
+        function getcomputerMove(){
+            const randomNumber=Math.random();
+            let computerMove = '';
+            if (randomNumber<1/3){
+                computerMove='rock'; 
+            }else if (randomNumber<2/3){
+                computerMove= 'paper';
+            }else{
+                computerMove='scissor';
+            }
+            return computerMove;
+        }
+
+        function getresult(playerMove, computerMove){
+            
+            if (playerMove===computerMove){
+                return 'Tie'
+            }else if(
+                 (playerMove=== 'rock') && (computerMove==='scissor')||
+                 (playerMove==='paper') && (computerMove==='rock')||
+                 (playerMove==='scissor') && (computerMove==='paper')
+
+             ) {
+                return 'you win'
+             }else{
+                return 'you Lose'
+             }
+        }
+
+        function playGame (playerMove){
+            let computerMove =getcomputerMove();
+            let result = getresult (playerMove,computerMove);
+            alert (`you picked ${playerMove} ,computer picked ${computerMove} ,${result}`);
+        }
+    </script>
+    
+</body>
+</html>

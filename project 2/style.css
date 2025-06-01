@@ -1,0 +1,28 @@
+header{
+    background-color:rgb(red, rgb(0, 55, 128), blue)
+}
+nav {
+    background-color: aqua;
+
+}
+nav ul{
+    margin: 0cap;
+    padding: 0cap;
+ overflow: hidden; 
+ list-style: none;  
+
+}
+nav ul {
+    float: right; 
+    text-align:center
+}
+nav ul {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border: 5px solid blueviolet;
+    margin: 2px 3px;
+
+
+}

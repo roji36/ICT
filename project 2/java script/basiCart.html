@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Display Cart Quantity</h1>
+    <button onclick="
+    alert('The cart Quantity is $ {cartQuantity}');
+    
+    ">Show Quantity</button>
+   <button onclick="
+//    cartQuantity = cartQuantity + 1;
+//    alert(cartQuantity);
+if (cartQuantity<10){
+    cartQuantity=cartQuantity+1;
+    alert(cartQuantity);
+}else{
+    alert ('Items cannot be addeded');
+}
+   "> Add To Cart</button>
+    <button onclick="
+    // cartQuantity = cartQuantity+2;
+    // alert(cartQuantity);
+    if (cartQuantity<10){
+        cartQuantity=cartQuantity+2;
+        alert(cartQuantity);
+    }else {
+        alert ('Items cannot be added');
+    }
+    ">+2</button>
+   <button onclick="
+//   cartQuantity = cartQuantity +3;
+//      alert(cartQuantity);
+
+    if (cartQuantity <10){
+        cartQuantity=cartQuantity+3;
+        alert (cartQuantity);
+        
+    }else {
+        alert ('Items cannot be added');
+
+    }
+   ">+3</button>
+   <button onclick="
+   cartQuantity = 0;
+   alert(cartQuantity);
+   ">Reset</button>
+
+   <button onclick="
+//    if (cartQuantity <= 10){
+// alert('stock Available');
+//    } else {
+//     alert ('out of stock');
+// }
+    
+
+if (cartQuantity<10){
+    alert('stock available');
+
+}
+else if (cartQuantity=== 10 ){
+    alert ('Limit Reached');
+}
+
+    else if (cartQuantity>10){
+    alert ('out of stock');
+}
+   ">check stock </button>
+
+   <script>
+    let cartQuantity = 0;
+   </script>
+</body>
+</html>
