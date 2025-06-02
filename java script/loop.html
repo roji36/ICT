@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <h1>For Loop</h1>
+    <p id="para"></p>
+    
+    
+    <script>
+        let text ='';
+        for(let i= 1; i<= 5; i++){
+        text+= 'The number is' + i + '<br>';
+        }
+
+        document.getElementById('para').innerHTML = text;
+
+        // For in Loop 
+        const car ={
+            model:'BMW',
+            color:'White',
+            mileage:'10km/1',
+            price:'$100,000'
+        }
+
+        let info ='';
+        for (let x in car){
+            info +=car [x] + '';
+        }
+        
+    </script>
+</body>
+</html>

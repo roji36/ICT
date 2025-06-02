@@ -1,0 +1,30 @@
+header{
+    background-color: black;
+    color:white;
+}
+button{
+    background-color: rgb(255, 145, 0);
+    color:greenyellow;
+    
+}
+body{
+    text-align: center;
+}
+.flex-box {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background:rgb(245, 237, 237);
+}
+
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%
+}
